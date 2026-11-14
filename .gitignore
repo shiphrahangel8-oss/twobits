@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables & Secret Keys (Never commit .env files)
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+!/.env.example
+!/backend/.env.example
+!/frontend/.env.example
+
+# Build & Runtime Artifacts
+dist/
+frontend/dist/
+frontend/.ux-checkpoint-backup/
+backend/database/localStore.json
+*.log
+npm-debug.log*
+.DS_Store
