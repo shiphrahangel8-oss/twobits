@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS shipments (
   origin_hub VARCHAR(150) NOT NULL,
   destination_city VARCHAR(150) NOT NULL,
   current_hub VARCHAR(150) NOT NULL,
-  status VARCHAR(50) NOT NULL CHECK (status IN ('Label Created', 'In Transit', 'Out for Delivery', 'Delayed', 'Disrupted', 'Delivered')),
+  status VARCHAR(50) NOT NULL CHECK (status IN ('Label Created', 'In Transit', 'Out for Delivery', 'Delayed', 'Disrupted', 'Lost', 'Delivered')),
   delay_hours INTEGER DEFAULT 0,
   disruption_reason TEXT,
   estimated_arrival TIMESTAMPTZ,
